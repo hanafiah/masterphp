@@ -22,7 +22,7 @@ try {
         $email = $_POST['email'];
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC);
-        header("Location: edit.php?id=".$result['id']);
+        header("Location: index.php");
     }
     ?>
     <!DOCTYPE html>
